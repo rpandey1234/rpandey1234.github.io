@@ -411,3 +411,31 @@ footer {
     color:#444;
   }
 }
+
+.inline li {
+  display: inline;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold; 
+}
+
+.companyLogo {
+  width: 50px;
+  margin: 0px;
+}
+
+.headerLogo {
+  width: 20px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.leftSpace {
+  padding-left: 80px;
+}
