@@ -18,5 +18,3 @@ fixScale = function(doc) {
 	}
 
 };
-
-console.log('run js on site');
