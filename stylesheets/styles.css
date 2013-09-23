@@ -439,3 +439,13 @@ footer {
 .leftSpace {
   padding-left: 80px;
 }
+
+img.content {
+  width: 200px;
+  margin: 0px;
+}
+
+.quoteAuthor {
+  font-style: normal;
+  padding-left: 20px;
+}
