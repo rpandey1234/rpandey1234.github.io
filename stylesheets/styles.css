@@ -436,6 +436,13 @@ footer {
   border: none;
 }
 
+.adobeLogo {
+  width: 20px;
+  margin: 0 0 -4px 2px;
+  padding: 0px;
+  border: none; 
+}
+
 .leftSpace {
   padding-left: 80px;
 }
