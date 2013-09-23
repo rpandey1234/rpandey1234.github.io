@@ -175,11 +175,11 @@ table {
   width:100%;
 }
 
-table {
+/*table {
   border: 1px solid #ccc;
   margin-bottom: 32px;
   text-align: left;
- }
+ }*/
 
 th {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
@@ -190,10 +190,10 @@ th {
   color: #FDFEFB;
  }
 
-td {
+/*td {
   padding: 10px;
 	background: #ccc;
- }
+ }*/
 
 
 /* Wrapper */
