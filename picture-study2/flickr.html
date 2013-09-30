@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rkp Flickr API</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+	<script src="flickr.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37306970-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type =
+    'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+    'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div class="header">
+	<header>
+		<div class="wrap">
+			<h1 class="icon">Picture Study</h1>
+			<nav>
+				<ul>
+					<li><a href="http://stanford.edu/~rkpandey">Rahul Pandey</a></li>
+					<li><a href="mailto:rpandey1234@gmail.com">Contact Me</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</header>
+</div>
+
+<div class="main">
+	<div class="slogan"><h2>Appreciate the beauty of photos (from <a href="http://flickr.com">flickr</a>)</h2></div>
+	<div class="content">
+
+		<div class="timerImage">
+			<h3>Currently showing: <span class="display-tag">random</span></h3>
+			<h4 class="loading">Loading...</h4>
+			<div class="panel">
+				<label for="tag">
+					<span class="message">Look for: </span>
+					<input type="text" name="tag" id="tagLabel" class="in" placeholder="airplanes" />
+				</label>
+				<br>
+				
+				<!-- <p>Timer: <span id="timer"></span></p> -->
+			</div>
+			<div class="imageContainer">
+				<div>
+					<img id="disp" src="http://www.stanford.edu/~rkpandey/cgi-bin//images/panda_biggest.jpg" alt="Panda default"></img>
+					<a class="trigger" href="#">&rsaquo;&rsaquo;</a>
+				</div>
+			</div>
+			<div id="timeStatus"></div>
+			<div class="panel2">
+				<label for="duration">
+					<span class="message">Duration (seconds): </span>
+					<input type="number" id="duration" class="in" value="10" />
+				</label>
+				<br>
+			</div>
+			<p class="title"></p>
+		</div>
+	</div>
+</div>
+<input type="button" id="btnGo" class="action" value="Go!"/>
+<input type="button" id="cancel" class="action" value="Cancel"/></br>
+</body>
+</html>

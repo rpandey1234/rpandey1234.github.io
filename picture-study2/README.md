@@ -1,0 +1,1 @@
+Playing with the flickr API. You can set the duration that each photo lasts and specify a tag.
