@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact</h1>
+    <p>Want to get in contact?</p>
+
+    <p>This form allows you to pay $1 to email me, and get a guaranteed response.
+      I'll try my best for the response to be thoughtful and thorough. If you're
+      not happy with the response, I'll refund your money. I'll typically respond
+      within 48 hours.
+    </p>
+
+    <p>If you haven't personally met me, this form is a great way to get my
+      attention abut a recruiting opportunity, hear my perspetive on school/career
+      advice, or if you just want to discuss a random topic :)
+    </p>
+
+    <p>
+      My background:
+        - did research in a Stanford lab which turned into a startup
+        - founding engineer at a startup that got acquihired by Pinterest
+        - joined Facebook to work on their hardware efforts
+        - taught the Android and interview prep class for Codepath
+    </p>
+
+    <!-- Include email contents to server, which will send email to me -->
+    <textarea name="inputEmail" cols="200" rows="5" placeholder="Your comment/question here.">
+    </textarea>
+
+
+    <form action="your-server-side-code" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_live_9cFOD5i6SnNpZqsrpFmseGLx"
+        data-amount="100"
+        data-name="Guaranteed response"
+        data-description="Thoughtful conversation"
+        data-image="images/rkpStripe.jpeg"
+        data-locale="auto"
+        data-zip-code="true">
+      </script>
+    </form>
+  </body>
+</html>
