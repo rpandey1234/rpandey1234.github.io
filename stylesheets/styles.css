@@ -421,7 +421,7 @@ footer {
 }
 
 .bold {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .companyLogo {
@@ -440,7 +440,7 @@ footer {
   width: 20px;
   margin: 0 0 -4px 2px;
   padding: 0px;
-  border: none; 
+  border: none;
 }
 
 .leftSpace {
@@ -455,4 +455,9 @@ img.content {
 .quoteAuthor {
   font-style: normal;
   padding-left: 20px;
+}
+
+.main {
+  width: 1160px;
+	margin: auto;
 }
