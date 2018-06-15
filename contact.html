@@ -53,15 +53,14 @@
       <li>taught the Android and interview prep class for <a href="https://codepath.com/">Codepath</a></li>
     </ul>
 
-    <!-- Include email contents to server, which will send email to me -->
-    <textarea name="inputEmail" cols="200" rows="5" placeholder="Your comment/question here.">
-    </textarea>
+    <form action="http://localhost:5000/charges" accept-charset="UTF-8" method="POST">
+      <!-- Include email contents to server, which will send email to me -->
+      <textarea name="inputEmail" cols="200" rows="5" placeholder="Your comment/question here.">
+      </textarea>
 
-
-    <form action="your-server-side-code" method="POST">
       <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-        data-key="pk_live_9cFOD5i6SnNpZqsrpFmseGLx"
+        data-key="pk_test_fRa6GbQWcxI6Z8rTwqEATE7d"
         data-amount="100"
         data-name="Guaranteed response"
         data-description="Thoughtful conversation"
