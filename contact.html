@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="https://rpandey1234.github.io/favicon.ico" />
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/main.js"></script>
@@ -53,10 +54,19 @@
       <li>taught the Android and interview prep class for <a href="https://codepath.com/">Codepath</a></li>
     </ul>
 
-    <form action="http://localhost:5000/charges" accept-charset="UTF-8" method="POST">
+    <hr>
+
+    <form action="http://localhost:5000/charges.json" accept-charset="UTF-8" method="POST">
       <!-- Include email contents to server, which will send email to me -->
-      <textarea name="inputEmail" cols="200" rows="5" placeholder="Your comment/question here.">
-      </textarea>
+      <input type="hidden" name="amount" value="100">
+      <div class="form-group">
+        <label for="emailInput">Email address</label>
+        <input type="email" name="email" class="form-control" id="emailInput" placeholder="kulfi@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="messageInput">Message</label>
+        <textarea class="form-control" name="message" id="messageInput" rows="3" placeholder="Your comment/question here."></textarea>
+      </div>
 
       <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
