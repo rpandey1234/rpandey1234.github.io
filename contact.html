@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="javascripts/contact.js"></script>
     <script type="text/javascript" async defer data-pin-color="red" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
     <meta name="p:domain_verify" content="1b7bad81aa6718045d02b063e9d972c6"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -56,12 +57,21 @@
 
     <hr>
 
-    <form action="http://localhost:5000/charges.json" accept-charset="UTF-8" method="POST">
+    <form action="http://localhost:5000/charges.json" accept-charset="UTF-8" id="messageForm" method="POST">
       <!-- Include email contents to server, which will send email to me -->
       <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="redirectUrl" value="https://rkpandey.com" id="redirectUrl">
       <div class="form-group">
         <label for="emailInput">Email address</label>
         <input type="email" name="email" class="form-control" id="emailInput" placeholder="kulfi@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="charityInput">Pick a charity</label>
+        <select class="form-control" id="charityInput" name="charity">
+          <option>Bill and Melinda Gates Foundation</option>
+          <option>Code.org</option>
+          <option>Farm Sanctuary</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="messageInput">Message</label>
