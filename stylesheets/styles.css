@@ -461,3 +461,8 @@ img.content {
   width: 1160px;
 	margin: auto;
 }
+
+.mainContent {
+  max-width: 1160px;
+  margin: 15px;
+}

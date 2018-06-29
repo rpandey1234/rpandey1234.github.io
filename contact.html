@@ -31,11 +31,11 @@
     </script>
   </head>
   <body>
-    <div class="main">
+    <div class="mainContent">
     <h1>Contact</h1>
     <p>Want to get in contact?</p>
 
-    <p>This form allows you to pay $1 to email me, and get a guaranteed response.
+    <p>This form allows you to pay $2 to email me, and get a guaranteed response.
       I'll try my best for the response to be thoughtful and thorough. If you're
       not happy with the response, I'll refund your money. I'll typically respond
       within 48 hours.
@@ -59,7 +59,7 @@
 
     <form action="https://rkppayment.herokuapp.com/charges.json" accept-charset="UTF-8" id="messageForm" method="POST">
       <!-- Include email contents to server, which will send email to me -->
-      <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="amount" value="200">
       <input type="hidden" name="redirectUrl" value="https://rkpandey.com" id="redirectUrl">
       <div class="form-group">
         <label for="emailInput">Email address</label>
@@ -81,12 +81,12 @@
       <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="pk_live_9cFOD5i6SnNpZqsrpFmseGLx"
-        data-amount="100"
-        data-name="Guaranteed response"
-        data-description="Thoughtful conversation"
+        data-amount="200"
+        data-name="rkpandey.com"
+        data-description="Guaranteed replies"
         data-image="images/rkpStripe.jpeg"
         data-locale="auto"
-        data-zip-code="true">
+        data-zip-code="false">
       </script>
     </form>
     </div>
