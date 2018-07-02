@@ -26,7 +26,7 @@ time, mark, audio, video {
 /* Base text styles */
 
 body {
-  padding:10px 50px 0 0;
+  padding:10px 40px 0 0;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
@@ -463,6 +463,10 @@ img.content {
 }
 
 .mainContent {
-  max-width: 1160px;
-  margin: 15px;
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.wrapperContact {
+  margin-left: 25px;
 }
