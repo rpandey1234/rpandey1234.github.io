@@ -37,7 +37,7 @@
       <p>Want to get in touch?</p>
 
       <p>The idea of this form is to introduce a small amount of friction to enter
-        my inbox. The way it works is that you'll pay a nominal fee (<b>$2</b>,
+        my inbox. The way it works is that you'll pay a nominal fee (<b>$5</b>,
         given to a charity of your choice), and in return I'll provide
         a thoughtful response to your inquiry. After our conversation
         via email or phone, I'm happy to refund the
@@ -66,7 +66,7 @@
 
     <form action="https://rkppayment.herokuapp.com/charges.json" accept-charset="UTF-8" id="messageForm" method="POST">
       <!-- Include email contents to server, which will send email to me -->
-      <input type="hidden" name="amount" value="200">
+      <input type="hidden" name="amount" value="500">
       <input type="hidden" name="redirectUrl" value="https://rkpandey.com" id="redirectUrl">
       <div class="form-group">
         <label for="emailInput">Email address</label>
@@ -88,7 +88,7 @@
       <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="pk_live_9cFOD5i6SnNpZqsrpFmseGLx"
-        data-amount="200"
+        data-amount="500"
         data-name="rkpandey.com"
         data-description="Guaranteed replies"
         data-image="images/rkpStripe.jpeg"
